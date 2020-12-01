@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily TODOs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app" >
+            <div class="title">Daily TODOs</div>
+            <div class="appIntro">This need to be updated.</div>
+            <div class="btns">
+                <button id="login">LOGIN</button>
+                <button id="signup">SIGN UP</button>
+            </div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form action="" method="POST" class="login-modal noDisplay">
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="login-heading">LOGIN</div>
+            <div class="email">
+                <input type="email" id="login-email" name="email" placeholder="EMAIL">
+            </div>
+            <div class="password">
+                <input type="password" id="login-password" name="password" placeholder="PASSWORD">
+            </div>
+            <div class="login-submit">
+                <button>LOGIN</button>
+            </div>
+        </form>
+
+        <!-- SIGNUP FORM -->
+        <form method="POST" action="" class="signup-modal noDisplay">
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="login-heading">SIGN UP</div>
+            <div class="email">
+                <input type="email" id="signup-email" name="email" placeholder="EMAIL">
+            </div>
+            <div class="password">
+                <input type="password" id="signup-password" name="password" placeholder="PASSWORD">
+            </div>
+            <div class="confirm-password">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="CONFIRM PASSWORD">
+            </div>
+            <div class="login-submit">
+                <button>LOGIN</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/04ce6063ff.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script src="js/connectionDetails.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/todoPage.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+</html>
