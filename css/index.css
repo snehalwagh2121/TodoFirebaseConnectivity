@@ -1,0 +1,78 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    background-color: #198cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+.todo-app{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.appIntro{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.btns{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.btns button{
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    width: 40%;
+    border: none;
+}
+
+.login-modal, .signup-modal{
+    position: absolute;
+    background-color: rgba(0, 0, 255,0.5);
+    width: 30%;
+    padding: 50px;
+    border-radius: 10px;
+}
+.close-btn{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+}
+.login-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-modal input, .signup-modal input{
+    padding: 8px 20px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8rem;
+}
+textarea:focus, input:focus{
+    outline: none;
+    border: 2px solid black;
+}
+
+.noDisplay{
+    display: none;
+}

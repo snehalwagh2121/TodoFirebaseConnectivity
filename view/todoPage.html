@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAILY TODOs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/todoPage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-heading">Daily TODOs</div>
+            <div class="logout">LOGOUT</div>
+        </div>
+        <div class="todos-content">
+            <div class="search">
+                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                <input type="text" class="searchBar" placeholder="SEARCH">
+            </div>
+            <ul class="todos">
+               
+            </ul>
+            <form action="" class="addTodo">
+                <input type="text" class="add" id="newTodo" placeholder="ADD TODO">
+                <button class="btn">ADD</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script src="../js/todoPage.js"></script>
+    <script src="../js/firebase.js"></script>
+</body>
+</html>
